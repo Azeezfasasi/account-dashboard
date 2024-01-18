@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    width: 700px;
+    height: 800px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#expensesList, #totalExpenses {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#totalAmount {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        position: absolute;
+        top: 70px;
+        left: 10px;
+        width: 320px;
+        height: 800px;
+        border: 1px solid black;
+        border-radius: 12px;
+        margin-top: 15px;
+        padding: 10px;
+    }
+}

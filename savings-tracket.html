@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Savings Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/savings-tracker.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="box">
+           <!-- Left sidebar section -->
+           <button id="openMenuBtn"><i class="fa fa-bars"></i></button>
+           <div class="sidebar-box" id="overlayMenu">
+            <button id="closeMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="sidebar">
+              <div class="profile-name">Azeez</div>
+                <div class="profile-email">fas.azeez@email.com</div>
+                <div class="overlap">
+                  <img id="profile-image" src="img/Azeez_Fasasi.png" alt="Profile Picture">
+                  <input type="file" id="file-input" accept="image/*">
+                  <button id="upload-btn">Change Picture</button>
+                </div>
+                <div class="menu">
+                  <a href="dashboard.html" rel="noopener noreferrer"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+                  <a href="expenses.html" rel="noopener noreferrer"><i class="fa-solid fa-comments-dollar"></i> Expenses</a>
+                  <a href="wallet.html" rel="noopener noreferrer"><i class="fa-solid fa-wallet"></i> Wallets</a>
+                  <a href="summary.html" rel="noopener noreferrer"><i class="fa-solid fa-rectangle-list"></i> Summary</a>
+                  <a class="active" href="savings-tracket.html" rel="noopener noreferrer"><i class="fa-solid fa-file-invoice-dollar"></i> Savings Tracker</a>
+                  <a href="settings.html" rel="noopener noreferrer"><i class="fa-solid fa-gear"></i> Settings</a>
+                  <a href="index.html" rel="noopener noreferrer"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Section for savings tracker -->
+      <div id="tracker-container">
+        <h2>Savings Goal Tracker</h2>
+        <label for="targetAmount">Target Amount:</label>
+        <input type="number" id="targetAmount" placeholder="Enter target amount" required>
+        <br>
+        <label for="currentSavings">Current Savings:</label>
+        <input type="number" id="currentSavings" placeholder="Enter current savings" required>
+        <br>
+        <button class="savings-btn" onclick="updateProgress()">Update Savings</button>
+        <div id="progress-bar-container">
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+    </div>
+      
+<script src="js/sidebar.js"></script>
+<script src="js/savings-tracker.js"></script>
+</body>
+
+</html>

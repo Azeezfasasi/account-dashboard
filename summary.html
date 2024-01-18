@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Summary</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/summary.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="box">
+           <!-- Left sidebar section -->
+           <button id="openMenuBtn"><i class="fa fa-bars"></i></button>
+           <div class="sidebar-box" id="overlayMenu">
+            <button id="closeMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="sidebar">
+              <div class="profile-name">Azeez</div>
+                <div class="profile-email">fas.azeez@email.com</div>
+                <div class="overlap">
+                  <img id="profile-image" src="img/Azeez_Fasasi.png" alt="Profile Picture">
+                  <input type="file" id="file-input" accept="image/*">
+                  <button id="upload-btn">Change Picture</button>
+                </div>
+                <div class="menu">
+                  <a href="dashboard.html" rel="noopener noreferrer"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+                  <a href="expenses.html" rel="noopener noreferrer"><i class="fa-solid fa-comments-dollar"></i> Expenses</a>
+                  <a href="wallet.html" rel="noopener noreferrer"><i class="fa-solid fa-wallet"></i> Wallets</a>
+                  <a class="active" href="summary.html" rel="noopener noreferrer"><i class="fa-solid fa-rectangle-list"></i> Summary</a>
+                  <a href="savings-tracket.html" rel="noopener noreferrer"><i class="fa-solid fa-file-invoice-dollar"></i> Savings Tracker</a>
+                  <a href="settings.html" rel="noopener noreferrer"><i class="fa-solid fa-gear"></i> Settings</a>
+                  <a href="index.html" rel="noopener noreferrer"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Summary section -->
+      <div class="summary-container">
+        <h1>Summary</h1>
+
+        <div class="summary-content" id="summaryContent">
+            <!-- Summary content will be displayed here -->
+        </div>
+
+        <button class="summary-btn" onclick="generateSummary()">Generate Summary</button>
+    </div>
+      
+<script src="js/sidebar.js"></script>
+<script src="js/summary.js"></script>
+</body>
+
+</html>

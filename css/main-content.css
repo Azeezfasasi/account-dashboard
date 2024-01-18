@@ -1,0 +1,194 @@
+/* Top content section */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-content {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    width: 700px;
+    height: 800px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.main-content .top-content {
+    height: 100px;
+    margin-top: -10px;
+    border-bottom: 1px solid black;
+}
+
+.main-content .title {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.main-content .title h3 {
+    font-size: 26px;
+}
+
+.main-content .title p {
+    margin-top: -20px;
+}
+
+.main-content .users {
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.main-content .users img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.main-content .users span {
+    border-radius: 50%;
+    background-color: grey;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.stats-section {
+    display: block;
+    width: 70%;
+    margin: 20px auto 0 auto;
+}
+
+.stats-section .stats {
+    width: 500px;
+    height: 60px;
+}
+
+.expense-details {
+    width: 100%;
+}
+
+.expense-details .expense-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.expense-details .breakdown {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.expense-details .breakdown .icon {
+    display: inline-block;
+    width: 5%;
+    vertical-align: middle;
+    background-color: rgb(76, 76, 185);
+    color: white;
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.expense-details .breakdown .expense {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    margin-right: -15px;
+}
+
+.expense-details .breakdown .expense h3 {
+    margin-bottom: -7px;
+}
+
+.expense-details .breakdown .amount {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 340px;
+        height: 800px;
+        border: 1px solid black;
+        border-radius: 12px;
+        margin-top: 30px;
+    }
+
+    .main-content .title {
+        display: inline-block;
+        width: 57%;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    
+    .main-content .title h3 {
+        font-size: 22px;
+    }
+    
+    .main-content .title p {
+        margin-top: -20px;
+    }
+
+    .main-content .users {
+        display: inline-block;
+        width: 40%;
+        vertical-align: middle;
+        margin-left: -5px;
+    }
+
+    .main-content .users img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+
+    .stats-section  .stats{
+        display: block;
+        width: 90%;
+        margin: 20px auto 0 auto;
+    }
+
+    .stats-section .stats img {
+        width: 90%;
+        height: 60px;
+    }
+
+    .expense-details .breakdown .icon {
+        display: inline-block;
+        width: 10%;
+        vertical-align: middle;
+        background-color: rgb(76, 76, 185);
+        color: white;
+        font-size: 25px;
+        padding: 8px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    
+    .expense-details .breakdown .expense {
+        display: inline-block;
+        width: 55%;
+        vertical-align: middle;
+        margin-right: -15px;
+    }
+    
+    .expense-details .breakdown .expense h3 {
+        margin-bottom: -7px;
+    }
+    
+    .expense-details .breakdown .amount {
+        display: inline-block;
+        vertical-align: middle;
+    }
+ }

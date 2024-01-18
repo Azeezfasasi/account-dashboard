@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wallets</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/wallets.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="box">
+           <!-- Left sidebar section -->
+           <button id="openMenuBtn"><i class="fa fa-bars"></i></button>
+           <div class="sidebar-box" id="overlayMenu">
+            <button id="closeMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="sidebar">
+              <div class="profile-name">Azeez</div>
+                <div class="profile-email">fas.azeez@email.com</div>
+                <div class="overlap">
+                    <img id="profile-image" src="img/Azeez_Fasasi.png" alt="Profile Picture">
+                    <input type="file" id="file-input" accept="image/*">
+                    <button id="upload-btn">Change Picture</button>
+                </div>
+                <div class="menu">
+                  <a href="dashboard.html" rel="noopener noreferrer"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+                  <a href="expenses.html" rel="noopener noreferrer"><i class="fa-solid fa-comments-dollar"></i> Expenses</a>
+                  <a class="active" href="wallet.html" rel="noopener noreferrer"><i class="fa-solid fa-wallet"></i> Wallets</a>
+                  <a href="summary.html" rel="noopener noreferrer"><i class="fa-solid fa-rectangle-list"></i> Summary</a>
+                  <a href="savings-tracket.html" rel="noopener noreferrer"><i class="fa-solid fa-file-invoice-dollar"></i> Savings Tracker</a>
+                  <a href="settings.html" rel="noopener noreferrer"><i class="fa-solid fa-gear"></i> Settings</a>
+                  <a href="index.html" rel="noopener noreferrer"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Wallets widget -->
+      <div class="wallet-container">
+        <h1>My Wallet</h1>
+        <p id="balance">Balance: ₦0.00</p>
+
+        <div class="transaction-form">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+
+            <label for="transactionType">Transaction Type:</label>
+            <select id="transactionType">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+
+            <button class="wallet-btn" onclick="performTransaction()">Submit</button>
+        </div>
+
+        <h2>Transaction History</h2>
+        <ul id="transactionList">
+            <!-- Transaction history will be displayed here -->
+        </ul>
+    </div>
+      
+<script src="js/sidebar.js"></script>
+<script src="js/wallets.js"></script>
+</body>
+
+</html>

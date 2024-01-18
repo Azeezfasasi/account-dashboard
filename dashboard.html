@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="css/sidebar.css" />
+        <link rel="stylesheet" href="css/main-content.css">
+        <link rel="stylesheet" href="css/right-content.css">
+        <link rel="stylesheet" href="css/profile.css">
+    </head>
+    <body>
+        <div class="box">
+           <!-- Left sidebar section -->
+           <button id="openMenuBtn"><i class="fa fa-bars"></i></button>
+           <div class="sidebar-box" id="overlayMenu">
+            <button id="closeMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="sidebar">
+              <div class="profile-name">Azeez</div>
+                <div class="profile-email">fas.azeez@email.com</div>
+                <div class="overlap">
+                    <img id="profile-image" src="img/Azeez_Fasasi.png" alt="Profile Picture">
+                    <input type="file" id="file-input" accept="image/*">
+                    <button id="upload-btn">Change Picture</button>
+                </div>
+                <div class="menu">
+                    <a class="active" href="dashboard.html" rel="noopener noreferrer"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+                    <a href="expenses.html" rel="noopener noreferrer"><i class="fa-solid fa-comments-dollar"></i> Expenses</a>
+                    <a href="wallet.html" rel="noopener noreferrer"><i class="fa-solid fa-wallet"></i> Wallets</a>
+                    <a href="summary.html" rel="noopener noreferrer"><i class="fa-solid fa-rectangle-list"></i> Summary</a>
+                    <a href="savings-tracket.html" rel="noopener noreferrer"><i class="fa-solid fa-file-invoice-dollar"></i> Savings Tracker</a>
+                    <a href="settings.html" rel="noopener noreferrer"><i class="fa-solid fa-gear"></i> Settings</a>
+                    <a href="index.html" rel="noopener noreferrer"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+                </div>
+            </div>
+        </div>
+      </div> 
+      
+      <!-- main content section -->
+      <div class="main-content">
+        <div class="top-content">
+            <div class="title">
+                <h3>Expenses</h3>
+                <p>1 - 20 January, 2024</p>
+            </div>
+            <div class="users">
+                <a href="#"><img src="img/profile.png" alt=""></a>
+                <a href="#"><img src="img/profile.png" alt=""></a>
+                <a href="#"><img src="img/profile.png" alt=""></a>
+                <a href="#"><span class="fa-solid fa-plus"></i></a>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stats">
+                <img src="img/stats.png"/>
+            </div>
+        </div>
+
+        <div class="expense-details">
+            <p class="expense-title">Today</p>
+            <div class="breakdown">
+                <div class="icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="expense">
+                    <h3>Groceries</h2>
+                    <p>5:12PM</p>
+                </div>
+                <div class="amount">
+                    <h3>-234.800</h3>
+                </div>
+            </div>
+            <div class="breakdown">
+                <div class="icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="expense">
+                    <h3>Transportation</h2>
+                    <p>5:12PM</p>
+                </div>
+                <div class="amount">
+                    <h3>-15,000</h3>
+                </div>
+            </div>
+            <div class="breakdown">
+                <div class="icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="expense">
+                    <h3>Housing</h2>
+                    <p>5:12PM</p>
+                </div>
+                <div class="amount">
+                    <h3>-125,000</h3>
+                </div>
+            </div>
+            <p class="expense-title">Monday, 8th January 2024</p>
+            <div class="breakdown">
+                <div class="icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="expense">
+                    <h3>Food and Drink</h2>
+                    <p>9:20AM</p>
+                </div>
+                <div class="amount">
+                    <h3>-19,000</h3>
+                </div>
+            </div>
+            <div class="breakdown">
+                <div class="icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="expense">
+                    <h3>Entertainment</h2>
+                    <p>6:42PM</p>
+                </div>
+                <div class="amount">
+                    <h3>-85,000</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right content section -->
+    <div class="right-content">
+        <div class="right-content-title">
+            <h3>Where your money go</h3>
+        </div>
+        <div class="category">
+            <p>Food and Drinks</p>
+            <div class="category-amount">
+                <p>872,400</p>
+            </div>
+            <div class="horizontal">
+                <div class="meter-1"></div>
+            </div>
+        </div>
+        <div class="category">
+            <p>Shopping</p>
+            <div class="category-amount">
+                <p>1,378,200</p>
+            </div>
+            <div class="horizontal">
+                <div class="meter-2"></div>
+            </div>
+        </div>
+        <div class="category">
+            <p>Housing</p>
+            <div class="category-amount">
+                <p>928,500</p>
+            </div>
+            <div class="horizontal">
+                <div class="meter-3"></div>
+            </div>
+        </div>
+        <div class="category">
+            <p>Transportation</p>
+            <div class="category-amount">
+                <p>420,700</p>
+            </div>
+            <div class="horizontal">
+                <div class="meter-4"></div>
+            </div>
+        </div>
+        <div class="category">
+            <p>Vehicle</p>
+            <div class="category-amount">
+                <p>520,000</p>
+            </div>
+            <div class="horizontal">
+                <div class="meter-5"></div>
+            </div>
+        </div>
+
+        <div class="right-tip">
+            <img src="img/rectangle-1.svg" />
+        </div>
+    </div>
+   
+
+      <script src="js/sidebar.js"></script>
+      <script src="js/profile.js"></script>
+    </body>
+</html>

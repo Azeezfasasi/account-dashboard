@@ -1,0 +1,163 @@
+/* Style for sidebar */
+body {
+  margin: 0;
+}
+
+.sidebar-box {
+  position: relative;
+  width: 220px;
+  height: 851px;
+  background-color: black;
+}
+
+.sidebar-box .sidebar {
+  position: absolute;
+  width: 201px;
+  /* height: 651px; */
+  height: 100%;
+  top: 0;
+  left: 18px;
+}
+
+.sidebar-box .menu {
+  position: absolute;
+  width: 154px;
+  height: 360px;
+  top: 291px;
+  left: 0;
+  margin-top: -55px;
+}
+
+.menu {
+  width: 100%;
+}
+
+ .menu a {
+  display: block;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 35px;
+  white-space: nowrap;
+  margin-bottom: 30px;
+}
+
+.menu a:hover {
+  font-size: 22px;
+}
+
+.menu .active {
+  /* text-decoration: underline; */
+  border-bottom: 1px solid white;
+}
+
+.sidebar-box .profile-name {
+  position: absolute;
+  top: 107px;
+  left: 0;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+.sidebar-box .profile-email {
+  position: absolute;
+  top: 147px;
+  left: 0;
+  opacity: 0.6;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.sidebar-box .overlap {
+  position: absolute;
+  width: 88px;
+  height: 87px;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .sidebar-box {
+    display: none;
+    z-index: 1;
+    width: 200px;
+    background-color: black;
+  } 
+
+  .sidebar-box .sidebar {
+    position: absolute;
+    width: 201px;
+    height: 651px;
+    /* height: 100%; */
+    top: 0;
+    left: 18px;
+    z-index: 1;
+  }
+
+  #openMenuBtn {
+    top: 20px;
+    right: 0px;
+    z-index: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  display: none;
+  z-index: 1;
+}
+
+#closeMenuBtn {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  background-color: black;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 30%;
+  font-size: 30px;
+  z-index: 1;
+}
+
+#openMenuBtn {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+}
+
+@media (min-width: 601px) {
+    #closeMenuBtn {
+    display: none;
+  }
+
+  #openMenuBtn {
+    display: none;
+  }
+}

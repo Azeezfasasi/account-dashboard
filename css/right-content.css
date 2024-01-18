@@ -1,0 +1,108 @@
+.right-content {
+
+    position: absolute;
+
+    top: 10px;
+    right: 20px;
+    border: 1px solid black;
+    border-radius: 12px;
+    height: 700px;
+    width: 270px;
+    padding-left: 10px;
+}
+
+.right-content .right-content-title {
+    font-family: "AvenirNext-DemiBold", Helvetica;
+    font-weight: 700;
+    color: #262a41;
+    font-size: 18px;
+    letter-spacing: 0.33px;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+.category p {
+    display: inline-block;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #26313f;
+    font-size: 13px;
+    letter-spacing: 0.46px;
+    line-height: 24px;
+    white-space: nowrap;
+    width: 70%;
+}
+
+.category .horizontal {
+    width: 95%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background-color: #eceff5;
+    border-radius: 5px;
+}
+
+.horizontal .meter-1 {
+    background-color: #31b996;
+    border-radius: 5px;
+    width: 20%;
+    height: 5px;
+}
+
+.horizontal .meter-2 {
+    background-color: #31b996;
+    border-radius: 5px;
+    width: 50%;
+    height: 5px;
+}
+
+.horizontal .meter-3 {
+    background-color: #31b996;
+    border-radius: 5px;
+    width: 40%;
+    height: 5px;
+}
+
+.horizontal .meter-4 {
+    background-color: #31b996;
+    border-radius: 5px;
+    width: 17%;
+    height: 5px;
+}
+
+.horizontal .meter-5 {
+    background-color: #31b996;
+    border-radius: 5px;
+    width: 35%;
+    height: 5px;
+}
+
+.right-content .category .category-amount {
+    display: inline-block;
+}
+
+.right-tip {
+    margin-top: 75px;
+}
+.right-tip img {
+    width: 250px;
+    height: 258px;
+}
+
+@media (max-width: 600px) {
+    .right-content {
+        position: absolute;
+        top: 850px;
+        left: 10px;
+        border: 1px solid black;
+        border-radius: 12px;
+        height: 700px;
+        width: 340px;
+        padding-left: 10px;
+    }
+
+    .right-tip img {
+        width: 95%;
+        height: 258px;
+    }
+}

@@ -1,0 +1,114 @@
+body {
+    background: url("https://t4.ftcdn.net/jpg/03/47/86/13/240_F_347861378_0lZqQpR65sYUwaqUoQu4TdD5e2nhj3eZ.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;;
+    font-family: "Raleway", sans-serif;
+    height: 100vh;
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .center#blur.active{
+    filter:blur(20px);
+    pointer-events:none;
+    user-select:none;
+  }
+  .center button {
+    padding: 25px 35px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #222;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .popup {
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 25px 35px;
+    background: #fff;
+    visibility:hidden;
+    box-shadow: 2px 2px 5px 5pxrgba (0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+      transform 200ms ease-in-out 200ms;
+  }
+  .popup.active {
+    top: 50%;
+    opacity: 1;
+    visibility:visible;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms,
+      transform 200ms ease-in-out 200ms;
+  }
+  .popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .popup .form h2 {
+    text-align: center;
+    color: #50b8e7;
+    margin: 10px 0 20px;
+    font-size: 25px;
+  }
+  .popup .form .form-element {
+    margin: 15px 0px;
+  }
+  .popup .form .form-element label {
+    font-size: 14px;
+    color: #222;
+  }
+  .popup .form .form-element input[type="text"],
+  .popup .form .form-element input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+  .popup .form .form-element input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  .popup .form .form-element .sign-in {
+    /* display: block; */
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: skyblue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+  }
+  .popup .form .form-element a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
